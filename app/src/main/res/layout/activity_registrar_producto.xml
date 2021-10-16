@@ -34,12 +34,12 @@
             android:translationY="20dp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btnImagenProd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#FFFFFF"
-            android:translationY="20dp"
-            app:srcCompat="@drawable/iconoFoto" />
+            app:srcCompat="@drawable/iconofoto" />
 
         <TextView
             android:id="@+id/textView2"
@@ -55,7 +55,7 @@
             android:translationY="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edtNomProd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -82,7 +82,7 @@
             android:translationY="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edtDesProd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -109,7 +109,7 @@
             android:translationY="20dp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spnCategoriaP"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_marginLeft="20dp"
@@ -131,7 +131,7 @@
             android:translationY="20dp" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/edtStockProd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -145,7 +145,6 @@
             android:translationY="20dp" />
 
         <TextView
-            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -158,7 +157,7 @@
             android:translationY="20dp" />
 
         <EditText
-            android:id="@+id/editTextNumberDecimal"
+            android:id="@+id/edtPreProd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -172,7 +171,7 @@
             android:translationY="20dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnRegProd"
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
@@ -183,10 +182,11 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             android:translationY="20dp" />
+
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnBackProd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
