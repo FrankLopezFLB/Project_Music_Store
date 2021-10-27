@@ -9,16 +9,17 @@
 
 
     <ImageButton
-        android:id="@+id/imgBtnVerMas"
+        android:id="@+id/imgBtnVerMas1"
         android:layout_width="17dp"
         android:layout_height="18dp"
+        android:layout_marginBottom="13dp"
         android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutHome2"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toEndOf="@+id/tvVerMas1"
         app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
-        app:layout_constraintVertical_bias="0.827"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_arrow_right" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -81,11 +82,26 @@
         app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
         app:layout_constraintVertical_bias="0.045" />
 
+    <TextView
+        android:id="@+id/tvAccesorioHome"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:text="Accesorios"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
+        app:layout_constraintVertical_bias="0.457" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+        android:id="@+id/constraintLayoutHome1"
         android:layout_width="143dp"
         android:layout_height="146dp"
-        android:layout_marginStart="12dp"
+
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,33 +112,92 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout7"
+        android:id="@+id/constraintLayoutHome2"
         android:layout_width="143dp"
         android:layout_height="146dp"
+
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
         app:layout_constraintTop_toBottomOf="@+id/tvProductosHome"
-        app:layout_constraintVertical_bias="0.06">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/tvVerMas1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Ver más"
         android:textColor="#5956E9"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutHome2"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="@+id/glLeftHome"
         app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/tvVerMas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Ver más"
+        android:textColor="#5956E9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutHome2" />
+
+    <ImageButton
+        android:id="@+id/imgBtnVerMas2"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/tvVerMas2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutHome2"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutHome3"
+        android:layout_width="143dp"
+        android:layout_height="146dp"
+
+        android:background="@drawable/white_edittext"
+        android:elevation="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesorioHome"
+        app:layout_constraintVertical_bias="0.176">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="143dp"
+
+        android:layout_height="146dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/white_edittext"
+        android:elevation="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayoutHome3"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccesorioHome"
+        app:layout_constraintVertical_bias="0.176">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
