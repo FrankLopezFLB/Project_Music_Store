@@ -7,4 +7,122 @@
     android:background="#F5F5F8"
     tools:context=".HomeActivity">
 
+
+    <ImageButton
+        android:id="@+id/imgBtnVerMas"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/tvVerMas1"
+        app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
+        app:layout_constraintVertical_bias="0.827"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLeftHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRightHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <TextView
+        android:id="@+id/tvTituloHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Music Store"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <SearchView
+        android:id="@+id/svBuscarProducto"
+        android:layout_width="338dp"
+        android:layout_height="51dp"
+        android:background="@drawable/bg_white_rounded"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@color/white"
+        android:queryHint="Buscar Producto"
+        android:submitBackground="@drawable/bg_white_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloHome"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/tvProductosHome"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:text="Productos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="143dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/white_edittext"
+        android:elevation="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome"
+        app:layout_constraintVertical_bias="0.06">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="143dp"
+        android:layout_height="146dp"
+        android:background="@drawable/white_edittext"
+        android:elevation="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome"
+        app:layout_constraintVertical_bias="0.06">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvVerMas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver más"
+        android:textColor="#5956E9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toBottomOf="@+id/svBuscarProducto"
+        app:layout_constraintVertical_bias="0.827" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
