@@ -100,10 +100,9 @@
 
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/glLeftHome"
-        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome"
-        app:layout_constraintVertical_bias="0.06">
+        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -114,10 +113,9 @@
 
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
-        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintTop_toBottomOf="@+id/tvProductosHome" />
 
     <TextView
         android:id="@+id/tvVerMas1"
@@ -170,12 +168,12 @@
 
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/glLeftHome"
         app:layout_constraintTop_toBottomOf="@+id/tvAccesorioHome"
-        app:layout_constraintVertical_bias="0.176">
+        app:layout_constraintVertical_bias="0.329">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -187,12 +185,12 @@
         android:layout_marginStart="20dp"
         android:background="@drawable/white_edittext"
         android:elevation="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
-        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/constraintLayoutHome3"
         app:layout_constraintTop_toBottomOf="@+id/tvAccesorioHome"
-        app:layout_constraintVertical_bias="0.176">
+        app:layout_constraintVertical_bias="0.329">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -223,5 +221,59 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteX="212dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/buy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
