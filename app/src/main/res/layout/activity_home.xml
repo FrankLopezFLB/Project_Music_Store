@@ -227,7 +227,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.88" />
+        app:layout_constraintGuide_percent="0.89" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -240,6 +240,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="@+id/glLeftHome"
         app:layout_constraintTop_toTopOf="@+id/guideline10"
+
         app:srcCompat="@drawable/home" />
 
     <ImageButton
@@ -275,5 +276,20 @@
         app:layout_constraintEnd_toStartOf="@+id/glRightHome"
         app:layout_constraintTop_toTopOf="@+id/guideline10"
         app:srcCompat="@drawable/buy" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9A98ED"
+        android:clickable="true"
+        app:backgroundTint="#9A98ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glRightHome"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/glLeftHome"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/category" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
