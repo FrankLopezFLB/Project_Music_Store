@@ -3,10 +3,9 @@ package com.desarrollo.project_music_store
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class HabilitarTrabajadorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_habilitar_trabajador)
     }
 }
