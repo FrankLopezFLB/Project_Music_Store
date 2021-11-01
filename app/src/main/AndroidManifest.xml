@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar">
         <activity android:name=".HabilitarTrabajadorActivity">
+        <activity android:name=".CanastaActivity">
+        </activity>
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +20,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistrarServicioActivity">
-
         </activity>
         <activity android:name=".RegistrarProductoActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MiPerfilActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HistorialComprasActivity"></activity>
+
     </application>
 
 </manifest>
