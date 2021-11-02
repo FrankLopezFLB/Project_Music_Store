@@ -1,4 +1,4 @@
-package com.desarrollo.project_music_store
+package com.desarrollo.proyectoappmoviles
 
 import org.junit.Test
 

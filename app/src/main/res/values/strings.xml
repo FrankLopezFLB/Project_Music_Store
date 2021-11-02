@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Project_Music_Store</string>
+    <string name="app_name">ProyectoAppMoviles</string>
+    
+    <string-array name="comboDistritos">
+        <item>Seleccione un distrito</item>
+    </string-array>
 </resources>

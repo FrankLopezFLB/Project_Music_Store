@@ -1,4 +1,4 @@
-package com.desarrollo.project_music_store
+package com.desarrollo.proyectoappmoviles
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.desarrollo.project_music_store", appContext.packageName)
+        assertEquals("com.desarrollo.proyectoappmoviles", appContext.packageName)
     }
 }
