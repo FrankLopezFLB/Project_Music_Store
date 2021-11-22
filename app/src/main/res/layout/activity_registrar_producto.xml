@@ -7,183 +7,211 @@
     android:background="#E5E5E5"
     tools:context=".RegistrarProductoActivity">
 
-    <LinearLayout
-        android:id="@+id/fondo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="66dp"
-        android:background="@drawable/redondeado"
+        <LinearLayout
+            android:id="@+id/fondo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/redondeado"
 
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/ramabhadra"
-            android:text="Registrar Producto"
-            android:textColor="#000000"
-            android:textSize="18dp"
-            android:translationX="30dp"
-            android:translationY="20dp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
 
-        <ImageButton
-            android:id="@+id/btnImagenProd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#FFFFFF"
-            app:srcCompat="@drawable/iconofoto" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Titulo"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationY="20dp" />
 
-        <EditText
-            android:id="@+id/edtNomProd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway_semibold"
-            android:hint="Ingrese nombre"
-            android:inputType="textPersonName"
-            android:textSize="17sp"
-            android:translationY="20dp" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ramabhadra"
+                        android:text="Registrar Producto"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:translationX="30dp"
+                        android:translationY="20dp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Descripción"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationY="20dp" />
+                    <ImageButton
+                        android:id="@+id/btnImagenProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:srcCompat="@drawable/iconofoto" />
 
-        <EditText
-            android:id="@+id/edtDesProd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway_semibold"
-            android:hint="Ingrese descripción"
-            android:inputType="textPersonName"
-            android:textSize="17sp"
-            android:translationY="20dp" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Titulo"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationY="20dp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Categoria"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationY="20dp" />
+                    <EditText
+                        android:id="@+id/edtNomProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:hint="Ingrese nombre"
+                        android:inputType="textPersonName"
+                        android:textSize="17sp"
+                        android:translationY="20dp" />
 
-        <Spinner
-            android:id="@+id/spnCategoriaP"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:translationY="20dp" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Descripción"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationY="20dp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Stock"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationY="20dp" />
+                    <EditText
+                        android:id="@+id/edtDesProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:hint="Ingrese descripción"
+                        android:inputType="textPersonName"
+                        android:textSize="17sp"
+                        android:translationY="20dp" />
 
-        <EditText
-            android:id="@+id/edtStockProd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway_semibold"
-            android:hint="Ingrese stock"
-            android:inputType="number"
-            android:textSize="17sp"
-            android:translationY="20dp" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Categoria"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationY="20dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Precio"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationY="20dp" />
+                    <Spinner
+                        android:id="@+id/spnCategoriaP"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:translationY="20dp" />
 
-        <EditText
-            android:id="@+id/edtPreProd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway_semibold"
-            android:hint="Ingrese precio"
-            android:inputType="numberDecimal"
-            android:textSize="17sp"
-            android:translationY="20dp" />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Stock"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationY="20dp" />
 
-        <Button
-            android:id="@+id/btnRegProd"
-            android:layout_width="259dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:background="@drawable/botonredondeado"
-            android:fontFamily="@font/raleway_bold"
-            android:text="Registrar"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:translationY="20dp" />
+                    <EditText
+                        android:id="@+id/edtStockProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:hint="Ingrese stock"
+                        android:inputType="number"
+                        android:textSize="17sp"
+                        android:translationY="20dp" />
 
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Precio"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationY="20dp" />
+
+                    <EditText
+                        android:id="@+id/edtPreProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:ems="10"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:hint="Ingrese precio"
+                        android:inputType="numberDecimal"
+                        android:textSize="17sp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/btnRegProd"
+                        android:layout_width="259dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/botonredondeado"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Registrar"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/BTNListarP"
+                        android:layout_width="259dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/botonredondeado"
+                        android:text="Listar productos"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
 
     <ImageButton
         android:id="@+id/btnBackProd"
@@ -197,4 +225,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
