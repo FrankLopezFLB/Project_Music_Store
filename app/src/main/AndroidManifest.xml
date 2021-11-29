@@ -8,14 +8,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_Music_Store">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Project_Music_Store.NoActionBar">
+        <activity android:name=".HabilitarTrabajadorActivity"/>
+        <activity android:name=".CanastaActivity">
+        </activity>
+        <activity android:name=".HomeActivity">
+
+        </activity>
+        <activity android:name=".RegistrarServicioActivity">
+        </activity>
+        <activity android:name=".RegistrarProductoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MiPerfilActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HistorialComprasActivity"></activity>
+
     </application>
 
 </manifest>
