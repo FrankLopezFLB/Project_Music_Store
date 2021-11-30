@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E5E5E5"
-    tools:context=".RegistrarServicioActivity">
+    tools:context="RegistrarServicioActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -28,10 +28,12 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="30dp"
-            android:fontFamily="@font/ramabhadra"
-            android:text="Registrar Servicio"
+            android:fontFamily="sans-serif-condensed"
+            android:text="REGISTRAR SERVICIO"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="18dp" />
+            android:textSize="24sp"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView7"
@@ -45,7 +47,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtNomSer"
+            android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -69,7 +71,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtDescSer"
+            android:id="@+id/txtDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -93,7 +95,7 @@
             android:textSize="18sp" />
 
         <Spinner
-            android:id="@+id/spnCatSer"
+            android:id="@+id/cboCategoria"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:layout_marginLeft="20dp"
@@ -112,7 +114,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtPreSer"
+            android:id="@+id/txtPrecio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -125,13 +127,13 @@
             android:textSize="17sp" />
 
         <Button
-            android:id="@+id/btnRegSer"
+            android:id="@+id/btnRegistrarServicio"
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@drawable/botonredondeado"
-            android:text="Registrar"
+            android:text="REGISTRAR"
             android:textAllCaps="false" />
     </LinearLayout>
 
