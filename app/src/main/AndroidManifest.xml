@@ -13,9 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ConsultaProductoActivity">
+
+        </activity>
+        <activity android:name=".ListadoProductoActivity">
+
+        </activity>
         <activity android:name=".HabilitarTrabajadorActivity" />
         <activity android:name=".CanastaActivity" />
-        <activity android:name=".HomeActivity" />
         <activity android:name=".RegistrarProductoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
