@@ -18,7 +18,7 @@
       android:layout_marginBottom="30sp"
       android:text="ADMINISTRAR INFORMACIÓN"
       android:textAlignment="center"
-      android:textColor="#000000"
+      android:textColor="#B7B1A4"
       android:textSize="25sp"
       android:textStyle="bold" />
 
@@ -28,7 +28,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="10sp"
       android:layout_marginBottom="15sp"
-      android:background="@drawable/radio_boton"
+      android:backgroundTint="#E5E5E5"
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Productos"
@@ -42,7 +42,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="15sp"
       android:layout_marginBottom="15sp"
-      android:background="@drawable/radio_boton"
+      android:backgroundTint="#E5E5E5"
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Trabajador"
@@ -56,7 +56,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="15sp"
       android:layout_marginBottom="15sp"
-      android:background="@drawable/radio_boton"
+      android:backgroundTint="#E5E5E5"
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Cliente"
@@ -70,7 +70,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="15sp"
       android:layout_marginBottom="15sp"
-      android:background="@drawable/radio_boton"
+      android:backgroundTint="#E5E5E5"
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Servicios"
@@ -84,11 +84,11 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="15sp"
       android:layout_marginBottom="15sp"
-      android:background="@drawable/radio_boton"
+      android:backgroundTint="#E5E5E5"
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Consultar envíos"
       android:textAllCaps="false"
       android:textColor="#000000"
-      android:textSize="20sp" />
+      android:textSize="20sp"/>
 </LinearLayout>

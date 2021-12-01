@@ -17,7 +17,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consulta_producto)
 
-        SPNCATCONP.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+        cboCategoriaServicio.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 categoria_seleccionada= p2.toString()
             }
@@ -33,7 +33,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
 
     fun BotonConsultar(v:View) {
         try{
-            var codigo = EDTCODBUSCA.text.toString().toInt()
+            var codigo = txtCodigoServicio.text.toString().toInt()
             if(codigo!=null){
             var hilo = Thread(Runnable {
                 var parametro = "?xcod=" + codigo
@@ -55,18 +55,18 @@ class ConsultaProductoActivity : AppCompatActivity() {
 
     fun BotonEliminar(v: View){
         try{
-            var codigo = EDTCODBUSCA.text.toString().toInt()
+            var codigo = txtCodigoServicio.text.toString().toInt()
             if(codigo!=null){
         var hilo = Thread(Runnable {
             var parametro = "?xcod=" + codigo
             var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioProducto/eliminar_producto.php" + parametro
             runOnUiThread {
-                EDTCODBUSCA.setText("")
-                EDTNOMBREBUSCA.setText("")
-                EDTDESCBUSCA.setText("")
-                SPNCATCONP.setSelection(0)
+                txtCodigoServicio.setText("")
+                txtNombreServicio.setText("")
+                txtDescripcionServicio.setText("")
+                cboCategoriaServicio.setSelection(0)
                 EDTSTOCKBUSCA.setText("")
-                EDTPRECIOBUSCA.setText("")
+                txtPrecioServicio.setText("")
                 Snackbar.make(v, "Producto Eliminado", 3000).show()
 
             }
@@ -92,21 +92,21 @@ class ConsultaProductoActivity : AppCompatActivity() {
             if (cant_elementos >= 0) {
                 for (i in 0..cant_elementos) {
                     // recuperar el nombre, el nro de horas y el codigo de carrera
-                    EDTNOMBREBUSCA.setText(json.getJSONObject(i).getString("nombre"))
-                    EDTDESCBUSCA.setText(json.getJSONObject(i).getString("descripcion"))
-                    SPNCATCONP.setSelection(json.getJSONObject(i).getInt("codigoCat"))
+                    txtNombreServicio.setText(json.getJSONObject(i).getString("nombre"))
+                    txtDescripcionServicio.setText(json.getJSONObject(i).getString("descripcion"))
+                    cboCategoriaServicio.setSelection(json.getJSONObject(i).getInt("codigoCat"))
                     EDTSTOCKBUSCA.setText(""+json.getJSONObject(i).getInt("stock"))
-                    EDTPRECIOBUSCA.setText(""+json.getJSONObject(i).getDouble("precio"))
+                    txtPrecioServicio.setText(""+json.getJSONObject(i).getDouble("precio"))
 
                 }
                 //
             } else {
-                EDTCODBUSCA.setText("")
-                EDTNOMBREBUSCA.setText("")
-                EDTDESCBUSCA.setText("")
-                SPNCATCONP.setSelection(0)
+                txtCodigoServicio.setText("")
+                txtNombreServicio.setText("")
+                txtDescripcionServicio.setText("")
+                cboCategoriaServicio.setSelection(0)
                 EDTSTOCKBUSCA.setText("")
-                EDTPRECIOBUSCA.setText("")
+                txtPrecioServicio.setText("")
                 Toast.makeText(this, "Error, codigo No Encontrado", Toast.LENGTH_SHORT).show()
             }
         } catch (ex: Exception) {
@@ -117,12 +117,12 @@ class ConsultaProductoActivity : AppCompatActivity() {
     fun BotonActualizarProducto(v: View){
         try{
             Log.wtf("combo",categoria_seleccionada)
-            var codigo = EDTCODBUSCA.text.toString().toInt()
-            var nombre= EDTNOMBREBUSCA.text.toString()
-            var descripcion = EDTDESCBUSCA.text.toString()
+            var codigo = txtCodigoServicio.text.toString().toInt()
+            var nombre= txtNombreServicio.text.toString()
+            var descripcion = txtDescripcionServicio.text.toString()
             var categoria = categoria_seleccionada.toInt()
             var stock = EDTSTOCKBUSCA.text.toString().toInt()
-            var precio =EDTPRECIOBUSCA.text.toString().toDouble()
+            var precio =txtPrecioServicio.text.toString().toDouble()
             var estado = 1;
 
             var parametros="?xcod=" + codigo +
