@@ -15,9 +15,19 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".ConsultaTrabajadorActivity"></activity>
         <activity android:name=".ListadoTrabajadorActivity">
-
         </activity>
-        <activity android:name=".RegistrarTrabajadorActivity">
+        <activity android:name=".RegistrarTrabajadorActivity"></activity>
+
+        <activity android:name=".ListadoServiciosActivity"></activity>
+        <activity android:name=".ConsultaProductoActivity"></activity>
+        <activity android:name=".RegistrarServicioActivity">
+        </activity>
+        <activity android:name=".ListadoProductoActivity"></activity>
+        <activity android:name=".HabilitarTrabajadorActivity" />
+        <activity android:name=".CanastaActivity" />
+        <activity android:name=".RegistrarProductoActivity"></activity>
+        <activity android:name=".RedirectActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
