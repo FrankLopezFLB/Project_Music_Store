@@ -133,12 +133,12 @@
     <Button
         android:id="@+id/BTNELIMINARPROD"
         android:layout_width="259sp"
-        android:textSize="18sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="#B7B1A4"
         android:onClick="btnEliminarServicio"
-        android:text="ELIMINAR PRODUCTO" />
+        android:text="ELIMINAR"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/BTNCERRARBUSCA"
