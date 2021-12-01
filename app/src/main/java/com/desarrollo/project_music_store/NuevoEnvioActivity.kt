@@ -19,7 +19,7 @@ class NuevoEnvioActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_envio)
 
-        var rutaServicioProd = "http://192.168.1.9/servicio/servicioEnvio/listar_productos.php"
+        var rutaServicioProd = "http://192.168.1.100:8085/servicio/servicioEnvio/listar_productos.php"
         var hilo1 = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicioProd)
             runOnUiThread {
@@ -28,7 +28,7 @@ class NuevoEnvioActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
         })
         hilo1.start()
 
-        var rutaServicioCliente = "http://192.168.1.9/servicio/servicioEnvio/listar_clientes.php"
+        var rutaServicioCliente = "http://192.168.1.100:8085/servicio/servicioEnvio/listar_clientes.php"
         var hilo2 = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicioCliente)
             runOnUiThread {
@@ -103,7 +103,7 @@ class NuevoEnvioActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
 
             var parametros = "?xdescripcion=${descripcion}&xidprod=${idProd}&xidcli=${idCli}&xdireccion=${direccion}&xdistrito=${distrito}&xcantidad=${cantidad}"
 
-            var rutaServicio = "http://192.168.1.9/servicio/servicioEnvio/nuevo_envio.php${parametros}"
+            var rutaServicio = "http://192.168.1.100:8085/servicio/servicioEnvio/nuevo_envio.php${parametros}"
 
             var hilo = Thread(Runnable {
                 var rpta = Utilitario.enviarDatos_String(rutaServicio)

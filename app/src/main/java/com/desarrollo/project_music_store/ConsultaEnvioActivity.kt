@@ -27,7 +27,7 @@ class ConsultaEnvioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consulta_envio)
 
-        var rutaServicioProd = "http://192.168.1.9/servicio/servicioEnvio/listar_productos.php"
+        var rutaServicioProd = "http://192.168.1.100:8085/servicio/servicioEnvio/listar_productos.php"
         var hilo1 = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicioProd)
             runOnUiThread {
@@ -36,7 +36,7 @@ class ConsultaEnvioActivity : AppCompatActivity() {
         })
         hilo1.start()
 
-        var rutaServicioCliente = "http://192.168.1.9/servicio/servicioEnvio/listar_clientes.php"
+        var rutaServicioCliente = "http://192.168.1.100:8085/servicio/servicioEnvio/listar_clientes.php"
         var hilo2 = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicioCliente)
             runOnUiThread {
@@ -60,7 +60,7 @@ class ConsultaEnvioActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.1.9/servicio/servicioEnvio/envio_por_codigo.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioEnvio/envio_por_codigo.php" + parametro
                     var resultado = Utilitario.traerDatos_String(ruta_servicio)
                     runOnUiThread {
                         BuscarEnvioCodigo(resultado)
@@ -82,7 +82,7 @@ class ConsultaEnvioActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.1.9/servicio/servicioEnvio/eliminar_envio.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioEnvio/eliminar_envio.php" + parametro
                     Utilitario.enviarDatos_String(ruta_servicio)
                     runOnUiThread {
                        clear()
