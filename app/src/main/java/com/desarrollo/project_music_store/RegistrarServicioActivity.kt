@@ -35,7 +35,7 @@ class RegistrarServicioActivity : AppCompatActivity() {
         Log.wtf("combo",categoria_seleccionada)
         var nombre= txtNombre.text.toString()
         var descripcion = txtDescripcion.text.toString()
-        var categoria = categoria_seleccionada.toInt()
+        var categoria = cboCategoria.selectedItemPosition
         var precio =txtPrecio.text.toString().toDouble()
         var estado = 1;
 
