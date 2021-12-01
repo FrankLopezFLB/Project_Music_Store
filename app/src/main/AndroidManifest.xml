@@ -13,34 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ListaEnviosActivity"></activity>
-        <activity android:name=".NuevoEnvioActivity">
-        <activity android:name=".ConsultaServicioActivity"></activity>
-        <activity android:name=".ListadoServiciosActivity" />
-        <activity android:name=".ConsultaProductoActivity" />
-        <activity android:name=".RegistrarServicioActivity"></activity>
-        <activity android:name=".ListadoProductoActivity" />
+
+        <activity android:name=".ConsultaTrabajadorActivity"></activity>
         <activity android:name=".HabilitarTrabajadorActivity" />
+        <activity android:name=".ListadoTrabajadorActivity"></activity>
+        <activity android:name=".RegistrarTrabajadorActivity"></activity>
+        <activity android:name=".ListadoServiciosActivity"></activity>
+        <activity android:name=".ConsultaServicioActivity"></activity>
+        <activity android:name=".RegistrarServicioActivity"></activity>
+        <activity android:name=".NuevoEnvioActivity"></activity>
+        <activity android:name=".ListaEnviosActivity"></activity>
+        <activity android:name=".MantenimientoClienteActivity"></activity>
+        <activity android:name=".NuevoClienteActivity" ></activity>
+        <activity android:name=".BuscarClienteActivity"></activity>
+        <activity android:name=".ListaClientesActivity"></activity>        
+        <activity android:name=".ConsultaProductoActivity" />        
+        <activity android:name=".ListadoProductoActivity" />        
         <activity android:name=".CanastaActivity" />
         <activity android:name=".RegistrarProductoActivity" />
         <activity android:name=".RedirectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConsultaProductoActivity" />
-        <activity android:name=".ListadoProductoActivity" />
-        <activity android:name=".HabilitarTrabajadorActivity" />
-        <activity android:name=".CanastaActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegistrarProductoActivity"></activity>
-        <activity android:name=".MantenimientoClienteActivity" />
-        <activity android:name=".NuevoClienteActivity" />
-        <activity android:name=".BuscarClienteActivity" />
-        <activity android:name=".ListaClientesActivity" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

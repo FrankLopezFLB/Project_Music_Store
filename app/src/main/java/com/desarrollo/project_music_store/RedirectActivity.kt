@@ -19,17 +19,17 @@ class RedirectActivity : AppCompatActivity() {
             var i= Intent(this,RegistrarProductoActivity::class.java)
             startActivity(i)
         }
-        /*btnRedirectCliente.setOnClickListener {
-            var i= Intent(this,::class.java)
+        btnRedirectCliente.setOnClickListener {
+            var i= Intent(this,NuevoClienteActivity::class.java)
             startActivity(i)
-        }*/
-        /*btnRedirectEnvios.setOnClickListener {
-            var i= Intent(this,RegistrarServicioActivity::class.java)
+        }
+        btnRedirectEnvios.setOnClickListener {
+            var i= Intent(this,NuevoEnvioActivity::class.java)
             startActivity(i)
-        }*/
-        /*btnRedirectTrabajador.setOnClickListener {
-            var i= Intent(this,RegistrarServicioActivity::class.java)
+        }
+        btnRedirectTrabajador.setOnClickListener {
+            var i= Intent(this,RegistrarTrabajadorActivity::class.java)
             startActivity(i)
-        }*/
+        }
     }
 }

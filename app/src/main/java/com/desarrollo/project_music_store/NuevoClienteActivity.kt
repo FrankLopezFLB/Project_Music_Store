@@ -45,7 +45,7 @@ class NuevoClienteActivity : AppCompatActivity() {
                         "&xema=" + correo +
                         "&xdni=" + dni
 
-                var ruta_servicio = "http://192.168.1.29/proyecto/nuevo_cliente.php" + parametros
+                var ruta_servicio = "http://192.168.1.150/servicio/servicioCliente/nuevo_cliente.php" + parametros
 
                 var hilo = Thread(Runnable {
                     var rpta = Utilitario.traerDatos_String(ruta_servicio)

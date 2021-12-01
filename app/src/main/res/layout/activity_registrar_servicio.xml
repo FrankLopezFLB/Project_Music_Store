@@ -145,7 +145,6 @@
                 android:onClick="btnGrabarServicio"
                 android:text="REGISTRAR"
                 android:textAllCaps="false" />
-
             <Button
             android:id="@+id/btnListarServicio"
             android:layout_width="259dp"
