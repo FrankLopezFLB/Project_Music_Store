@@ -2,22 +2,36 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.desarrollo.project_music_store">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_Music_Store.NoActionBar">
-        <activity android:name=".HabilitarTrabajadorActivity"/>
-        <activity android:name=".CanastaActivity">
-        </activity>
-        <activity android:name=".HomeActivity">
-
-        </activity>
-        <activity android:name=".RegistrarServicioActivity">
-        </activity>
-        <activity android:name=".RegistrarProductoActivity">
+        android:theme="@style/Theme.Project_Music_Store.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ConsultaEnvioActivity"></activity>
+        <activity android:name=".ConsultaTrabajadorActivity" />
+        <activity android:name=".HabilitarTrabajadorActivity" />
+        <activity android:name=".ListadoTrabajadorActivity" />
+        <activity android:name=".RegistrarTrabajadorActivity" />
+        <activity android:name=".ListadoServiciosActivity" />
+        <activity android:name=".ConsultaServicioActivity" />
+        <activity android:name=".RegistrarServicioActivity" />
+        <activity android:name=".NuevoEnvioActivity" />
+        <activity android:name=".ListaEnviosActivity" />
+        <activity android:name=".MantenimientoClienteActivity" />
+        <activity android:name=".NuevoClienteActivity" />
+        <activity android:name=".BuscarClienteActivity" />
+        <activity android:name=".ListaClientesActivity" />
+        <activity android:name=".ConsultaProductoActivity" />
+        <activity android:name=".ListadoProductoActivity" />
+        <activity android:name=".CanastaActivity" />
+        <activity android:name=".RegistrarProductoActivity" />
+        <activity android:name=".RedirectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,10 +43,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".MiPerfilActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".HistorialComprasActivity"></activity>
-
+        <activity android:name=".MiPerfilActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HistorialComprasActivity" />
     </application>
 
 </manifest>

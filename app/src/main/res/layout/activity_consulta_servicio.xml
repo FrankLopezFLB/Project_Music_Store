@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultaServicioActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Consultar Servicios"
+        android:textAlignment="center"
+        android:textColor="#B7B1A4"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold">
+
+        <EditText
+            android:id="@+id/txtCodigoServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="18sp"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="Ingrese Codigo"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnConsultarServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_weight="1"
+            android:backgroundTint="#B7B1A4"
+            android:textSize="18sp"
+            android:onClick="btnConsultarServicio"
+            android:text="Consultar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNombreServicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Descripción"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtDescripcionServicio"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Categoria"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/cboCategoriaServicio"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_height="40dp"
+        android:entries="@array/v_categorias" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio S/"
+        android:textSize="18sp"
+        android:fontFamily="@font/raleway_semibold"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtPrecioServicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="none|number" />
+
+    <Button
+        android:id="@+id/BTNACTUAP"
+        android:layout_width="259sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:backgroundTint="#B7B1A4"
+        android:onClick="btnActualizarServicio"
+        android:text="ACTUALIZAR" />
+
+    <Button
+        android:id="@+id/BTNELIMINARPROD"
+        android:layout_width="259sp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#B7B1A4"
+        android:onClick="btnEliminarServicio"
+        android:text="ELIMINAR PRODUCTO" />
+
+    <Button
+        android:id="@+id/BTNCERRARBUSCA"
+        android:layout_width="259sp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#B7B1A4"
+        android:onClick="btnCerrar"
+        android:text="Cerrar" />
+
+</LinearLayout>

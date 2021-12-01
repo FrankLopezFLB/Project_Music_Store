@@ -20,6 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
@@ -28,10 +38,12 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="30dp"
-            android:fontFamily="@font/ramabhadra"
-            android:text="Registrar Servicio"
-            android:textColor="#000000"
-            android:textSize="18dp" />
+            android:fontFamily="@font/raleway_semibold"
+            android:text="REGISTRAR SERVICIO"
+            android:textAlignment="center"
+            android:textColor="#B7B1A4"
+            android:textSize="30sp"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView7"
@@ -45,7 +57,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtNomSer"
+            android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -54,8 +66,7 @@
             android:ems="10"
             android:fontFamily="@font/raleway_semibold"
             android:hint="Ingrese nombre"
-            android:inputType="textPersonName"
-            android:textSize="17sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView8"
@@ -69,7 +80,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtDescSer"
+            android:id="@+id/txtDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -78,8 +89,7 @@
             android:ems="10"
             android:fontFamily="@font/raleway_semibold"
             android:hint="Ingrese descripción"
-            android:inputType="textPersonName"
-            android:textSize="17sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -93,12 +103,13 @@
             android:textSize="18sp" />
 
         <Spinner
-            android:id="@+id/spnCatSer"
+            android:id="@+id/cboCategoria"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp" />
+            android:layout_marginRight="20dp"
+            android:entries="@array/v_categorias" />
 
         <TextView
             android:id="@+id/textView10"
@@ -112,7 +123,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/edtPreSer"
+            android:id="@+id/txtPrecio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -122,17 +133,39 @@
             android:fontFamily="@font/raleway_semibold"
             android:hint="Ingrese precio"
             android:inputType="numberDecimal"
-            android:textSize="17sp" />
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btnRegSer"
+            <Button
+                android:id="@+id/btnRegistrarServicio"
+                android:layout_width="259dp"
+                android:backgroundTint="#B7B1A4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:onClick="btnGrabarServicio"
+                android:text="REGISTRAR"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnConsultasServicio"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B7B1A4"
+                android:text="CONSULTAR"
+                android:textAllCaps="false" />
+            <Button
+            android:id="@+id/btnListarServicio"
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/botonredondeado"
-            android:text="Registrar"
+            android:layout_marginTop="10dp" android:backgroundTint="#B7B1A4"
+            android:text="LISTAR"
             android:textAllCaps="false" />
+        </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
 
     <ImageButton
