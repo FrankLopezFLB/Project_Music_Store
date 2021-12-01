@@ -13,7 +13,7 @@ class ListadoServiciosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_servicios)
 
-        var ruta_servicio="http://192.168.1.150/servicio/servicioServicio/listar_servicio.php"
+        var ruta_servicio="http://192.168.0.107:80/servicio/servicioServicio/listar_servicio.php"
         var hilo=Thread(Runnable{
             var resultado=Utilitario.traerDatos_String(ruta_servicio)
             Log.i("datos",resultado)
