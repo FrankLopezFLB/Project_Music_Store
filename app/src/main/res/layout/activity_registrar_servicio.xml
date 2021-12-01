@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E5E5E5"
-    tools:context="RegistrarServicioActivity">
+    tools:context=".RegistrarServicioActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -56,7 +56,6 @@
             android:ems="10"
             android:fontFamily="@font/raleway_semibold"
             android:hint="Ingrese nombre"
-            android:inputType="textPersonName"
             android:textSize="17sp" />
 
         <TextView
@@ -80,7 +79,6 @@
             android:ems="10"
             android:fontFamily="@font/raleway_semibold"
             android:hint="Ingrese descripción"
-            android:inputType="textPersonName"
             android:textSize="17sp" />
 
         <TextView
@@ -100,7 +98,8 @@
             android:layout_height="37dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp" />
+            android:layout_marginRight="20dp"
+            android:entries="@array/v_categorias" />
 
         <TextView
             android:id="@+id/textView10"
@@ -133,7 +132,17 @@
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@drawable/botonredondeado"
+            android:onClick="btnGrabarServicio"
             android:text="REGISTRAR"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btnListarServicio"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botonredondeado"
+            android:text="LISTAR"
             android:textAllCaps="false" />
     </LinearLayout>
 
