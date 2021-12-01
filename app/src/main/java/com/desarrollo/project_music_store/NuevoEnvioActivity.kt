@@ -1,5 +1,6 @@
 package com.desarrollo.project_music_store
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -38,6 +39,11 @@ class NuevoEnvioActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
         })
 
         hilo2.start()
+
+        btnIrListarEnvios.setOnClickListener {
+            var i = Intent(this, ListaEnviosActivity::class.java)
+            startActivity(i)
+        }
 
     }
 

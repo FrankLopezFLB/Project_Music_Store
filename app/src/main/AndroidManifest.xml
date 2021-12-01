@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ListaEnviosActivity"></activity>
         <activity android:name=".NuevoEnvioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,14 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConsultaProductoActivity"></activity>
-        <activity android:name=".ListadoProductoActivity"></activity>
+        <activity android:name=".ConsultaProductoActivity" />
+        <activity android:name=".ListadoProductoActivity" />
         <activity android:name=".HabilitarTrabajadorActivity" />
         <activity android:name=".CanastaActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".RegistrarProductoActivity">
-
-        </activity>
+        <activity android:name=".RegistrarProductoActivity"></activity>
         <activity android:name=".MantenimientoClienteActivity" />
         <activity android:name=".NuevoClienteActivity" />
         <activity android:name=".BuscarClienteActivity" />
