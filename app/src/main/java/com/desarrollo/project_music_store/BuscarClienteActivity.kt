@@ -24,7 +24,7 @@ class BuscarClienteActivity : AppCompatActivity() {
     {
         var hilo=Thread(Runnable {
             var parametro = "?xcod=" + txtCodigoBC.text.toString()
-            var ruta_servicio = "http://192.168.1.29/proyecto/buscar_cliente.php"+parametro
+            var ruta_servicio = "http://192.168.1.150/servicio/servicioCliente/buscar_cliente.php"+parametro
             var resultado = Utilitario.traerDatos_String(ruta_servicio)
             runOnUiThread {
                 BuscarBC(resultado)

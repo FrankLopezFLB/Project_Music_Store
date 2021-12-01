@@ -17,14 +17,10 @@
         <activity android:name=".ConsultaTrabajadorActivity"></activity>
         <activity android:name=".ListadoTrabajadorActivity"></activity>
         <activity android:name=".RegistrarTrabajadorActivity"></activity>
-
         <activity android:name=".ListadoServiciosActivity"></activity>
         <activity android:name=".RegistrarServicioActivity"></activity>
         <activity android:name=".NuevoEnvioActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+
         </activity>
         <activity android:name=".ListaEnviosActivity"></activity>
 
@@ -39,7 +35,12 @@
 
         <activity android:name=".HabilitarTrabajadorActivity"></activity>
         <activity android:name=".CanastaActivity"></activity>
-        <activity android:name=".RedirectActivity"></activity>
+        <activity android:name=".RedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
