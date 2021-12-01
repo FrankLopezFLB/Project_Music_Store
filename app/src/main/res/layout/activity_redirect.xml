@@ -32,7 +32,6 @@
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Productos"
-      android:textAlignment="textStart"
       android:textAllCaps="false"
       android:textColor="#000000"
       android:textSize="20sp" />
@@ -47,7 +46,6 @@
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Trabajador"
-      android:textAlignment="textStart"
       android:textAllCaps="false"
       android:textColor="#000000"
       android:textSize="20sp" />
@@ -62,7 +60,6 @@
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Cliente"
-      android:textAlignment="textStart"
       android:textAllCaps="false"
       android:textColor="#000000"
       android:textSize="20sp" />
@@ -77,7 +74,6 @@
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Registrar Servicios"
-      android:textAlignment="textStart"
       android:textAllCaps="false"
       android:textColor="#000000"
       android:textSize="20sp" />
@@ -92,7 +88,6 @@
       android:drawableRight="@drawable/icono3"
       android:padding="20sp"
       android:text="Consultar envíos"
-      android:textAlignment="textStart"
       android:textAllCaps="false"
       android:textColor="#000000"
       android:textSize="20sp" />
