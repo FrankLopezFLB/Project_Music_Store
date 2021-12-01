@@ -13,7 +13,7 @@ class ListadoTrabajadorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_trabajador)
 
-        var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/listar_trabajadores.php"
+        var ruta_servicio="http://192.168.1.150/servicio/servicioTrabajador/listar_trabajadores.php"
         //definimos el hilo
         var hilo=Thread(Runnable{
             //obtner los datos como cadena usando el metodo traerdatos

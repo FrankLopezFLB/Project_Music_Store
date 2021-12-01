@@ -94,9 +94,10 @@
                     android:text="Cargo" />
 
                 <Spinner
-                    android:id="@+id/spinner2"
+                    android:id="@+id/spCargos"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:ems="10"/>
 
                 <TextView
                     android:id="@+id/textView29"
@@ -155,20 +156,20 @@
                     android:inputType="textPersonName" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnRegistrarTrabajador"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="BotonGrabarTrabajador"
                     android:text="REGISTRAR" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btnListarTrabajador"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Listar Trabajadores" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/btnConsultarTrabajador"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Consultar Trabajador" />

@@ -30,20 +30,20 @@
             app:layout_constraintTop_toTopOf="@+id/guideline19">
 
             <TextView
-                android:id="@+id/textView33"
+                android:id="@+id/tvConsultarTrabajador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="LISTADO TRABAJADORES"
                 android:textAlignment="center"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/guideline20"
+                app:layout_constraintBottom_toTopOf="@+id/gdl4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline20"
+                android:id="@+id/gdl4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -54,27 +54,27 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/layoutlist"
-                app:layout_constraintBottom_toTopOf="@+id/guideline23"
-                app:layout_constraintEnd_toStartOf="@+id/guideline22"
-                app:layout_constraintStart_toStartOf="@+id/guideline21"
-                app:layout_constraintTop_toTopOf="@+id/guideline20" />
+                app:layout_constraintBottom_toTopOf="@+id/gdl5"
+                app:layout_constraintEnd_toStartOf="@+id/gdl3"
+                app:layout_constraintStart_toStartOf="@+id/gdl1"
+                app:layout_constraintTop_toTopOf="@+id/gdl4" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline21"
+                android:id="@+id/gdl1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.1" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline22"
+                android:id="@+id/gdl3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.9" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline23"
+                android:id="@+id/gdl5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
