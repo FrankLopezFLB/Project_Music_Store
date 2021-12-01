@@ -18,7 +18,7 @@ class ConsultaTrabajadorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consulta_trabajador)
-        var rutaServicioTra = "http://192.168.1.150/servicio/servicioTrabajador/listar_cargos.php"
+        var rutaServicioTra = "http://192.168.1.100:8085/servicio/servicioTrabajador/listar_cargos.php"
         var hilo1 = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicioTra)
             runOnUiThread {
@@ -74,7 +74,7 @@ class ConsultaTrabajadorActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.1.150/servicio/servicioTrabajador/trabajador_por_codigo.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioTrabajador/trabajador_por_codigo.php" + parametro
                     var resultado = Utilitario.traerDatos_String(ruta_servicio)
                     runOnUiThread {
                         BuscarTrabajadorCodigo(resultado)
@@ -96,7 +96,7 @@ class ConsultaTrabajadorActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.1.150/servicio/servicioTrabajador/eliminar_trabajador.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioTrabajador/eliminar_trabajador.php" + parametro
                     Utilitario.enviarDatos_String(ruta_servicio)
                     runOnUiThread {
                         edtCodCTra.setText("")
@@ -181,7 +181,7 @@ class ConsultaTrabajadorActivity : AppCompatActivity() {
                     "&xcorre="+correo
 
             Log.wtf("parametros",parametros)
-            var ruta_servicio="http://192.168.1.150/servicio/servicioTrabajador/actualizar_trabajador.php"+parametros
+            var ruta_servicio="http://192.168.1.100:8085/servicio/servicioTrabajador/actualizar_trabajador.php"+parametros
             var hilo=Thread(Runnable{
                 Utilitario.enviarDatos_String(ruta_servicio)
                 runOnUiThread {

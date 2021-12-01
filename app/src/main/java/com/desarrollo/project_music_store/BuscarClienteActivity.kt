@@ -24,7 +24,7 @@ class BuscarClienteActivity : AppCompatActivity() {
     {
         var hilo=Thread(Runnable {
             var parametro = "?xcod=" + txtCodigoBC.text.toString()
-            var ruta_servicio = "http://192.168.1.150/servicio/servicioCliente/buscar_cliente.php"+parametro
+            var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioCliente/buscar_cliente.php"+parametro
             var resultado = Utilitario.traerDatos_String(ruta_servicio)
             runOnUiThread {
                 BuscarBC(resultado)
@@ -86,7 +86,7 @@ class BuscarClienteActivity : AppCompatActivity() {
                         "&xema=" + correo +
                         "&xdni=" + dni
 
-                var ruta_servicio = "http://192.168.1.29/proyecto/actualizar_cliente.php" + parametros
+                var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioCliente/actualizar_cliente.php" + parametros
 
                 var hilo = Thread(Runnable {
                     var rpta = Utilitario.traerDatos_String(ruta_servicio)
@@ -110,7 +110,7 @@ class BuscarClienteActivity : AppCompatActivity() {
     fun BotonEliminar(v: View)
     {
         var parametro = "?xcod=" +txtCodigoBC.text.toString().toInt()
-        var ruta_servicio = "http://192.168.1.29/proyecto/eliminar_cliente.php"+parametro
+        var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioCliente/eliminar_cliente.php"+parametro
 
         var hilo = Thread(Runnable {
             var rpta = Utilitario.traerDatos_String(ruta_servicio)

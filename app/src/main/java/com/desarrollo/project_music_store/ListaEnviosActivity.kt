@@ -13,7 +13,7 @@ class ListaEnviosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_envios)
 
-        var rutaServicio = "http://192.168.1.150/servicio/servicioEnvio/listar_envios.php"
+        var rutaServicio = "http://192.168.1.100:8085/servicio/servicioEnvio/listar_envios.php"
         var hilo = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(rutaServicio)
             runOnUiThread {

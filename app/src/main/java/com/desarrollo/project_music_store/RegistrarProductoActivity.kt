@@ -61,7 +61,7 @@ class RegistrarProductoActivity : AppCompatActivity() {
                 "&xprecio=" +precio+
                 "&xestado="+estado
         Log.wtf("parametros",parametros)
-        var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/nuevo_producto.php"+parametros
+        var ruta_servicio="http://192.168.1.100:8085/servicio/servicioProducto/nuevo_producto.php"+parametros
         var hilo=Thread(Runnable{
             Utilitario.enviarDatos_String(ruta_servicio)
             runOnUiThread {

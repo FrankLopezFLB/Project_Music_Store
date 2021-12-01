@@ -20,7 +20,7 @@ class RedirectActivity : AppCompatActivity() {
             startActivity(i)
         }
         btnRedirectCliente.setOnClickListener {
-            var i= Intent(this,NuevoClienteActivity::class.java)
+            var i= Intent(this,MantenimientoClienteActivity::class.java)
             startActivity(i)
         }
         btnRedirectEnvios.setOnClickListener {

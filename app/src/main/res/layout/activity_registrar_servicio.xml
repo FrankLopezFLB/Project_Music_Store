@@ -41,7 +41,7 @@
             android:fontFamily="@font/raleway_semibold"
             android:text="REGISTRAR SERVICIO"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#B7B1A4"
             android:textSize="30sp"
             android:typeface="serif" />
 
@@ -135,23 +135,32 @@
             android:inputType="numberDecimal"
             android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btnRegistrarServicio"
-            android:layout_width="259dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/botonredondeado"
-            android:onClick="btnGrabarServicio"
-            android:text="REGISTRAR"
-            android:textAllCaps="false" />
-        <Button
+            <Button
+                android:id="@+id/btnRegistrarServicio"
+                android:layout_width="259dp"
+                android:backgroundTint="#B7B1A4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:onClick="btnGrabarServicio"
+                android:text="REGISTRAR"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnConsultasServicio"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B7B1A4"
+                android:text="CONSULTAR"
+                android:textAllCaps="false" />
+            <Button
             android:id="@+id/btnListarServicio"
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/botonredondeado"
+            android:layout_marginTop="10dp" android:backgroundTint="#B7B1A4"
             android:text="LISTAR"
             android:textAllCaps="false" />
         </LinearLayout>
