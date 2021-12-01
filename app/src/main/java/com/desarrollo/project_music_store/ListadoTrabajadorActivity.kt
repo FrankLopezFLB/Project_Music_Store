@@ -1,19 +1,19 @@
 package com.desarrollo.project_music_store
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_listado_producto.*
+import kotlinx.android.synthetic.main.activity_listado_trabajador.*
 import org.json.JSONArray
 
-class ListadoProductoActivity : AppCompatActivity() {
+class ListadoTrabajadorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_listado_producto)
+        setContentView(R.layout.activity_listado_trabajador)
 
-        var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/listar_productos.php"
+        var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/listar_trabajadores.php"
         //definimos el hilo
         var hilo=Thread(Runnable{
             //obtner los datos como cadena usando el metodo traerdatos
@@ -21,17 +21,14 @@ class ListadoProductoActivity : AppCompatActivity() {
             Log.i("datos",resultado)
             //
             runOnUiThread{
-                mostrarProductos(resultado)
+                mostrarTrabajadores(resultado)
             }
         })
         //iniciar el hilo
         hilo.start()
-
-        //
-
     }
 
-    fun mostrarProductos(cadena:String){
+    fun mostrarTrabajadores(cadena:String){
         var lista=ArrayList<String>()
         //
         var cad=""
@@ -43,12 +40,12 @@ class ListadoProductoActivity : AppCompatActivity() {
         for(i in 0..cant_elementos)
         {
             //recuperar el codigo, nombre y el nro de horas
-            cad="Codigo: "+ json.getJSONObject(i).getInt("codigoProd")+"\n"+
-                    "Nombre: "+ json.getJSONObject(i).getString("nombre")+"\n"+
-                    "Descripcion: "+ json.getJSONObject(i).getString("descripcion")+"\n"+
-                    "Categoria: "+ json.getJSONObject(i).getString("nombrecat")+"\n"+
-                    "Stock: "+ json.getJSONObject(i).getInt("stock")+"\n"+
-                    "Precio: "+ json.getJSONObject(i).getDouble("precio")
+            cad="ID: "+ json.getJSONObject(i).getInt("codigoTra")+"\n"+
+                    "Nombre: "+ json.getJSONObject(i).getString("nombreTra")+" " + json.getJSONObject(i).getString("apellidoTra")+"\n"+
+                    "DNI: "+ json.getJSONObject(i).getString("dniTra")+"\n"+
+                    "Cargo: "+ json.getJSONObject(i).getString("nombreCar")+"\n"+
+                    "Telefono: "+ json.getJSONObject(i).getString("telefonoTra")+"\n"+
+                    "Correo: "+ json.getJSONObject(i).getString("correoTra")
 
             //agregar a la lista
             lista.add(cad)
@@ -56,6 +53,6 @@ class ListadoProductoActivity : AppCompatActivity() {
         //
         var adaptador= ArrayAdapter<String>(applicationContext,android.R.layout.simple_list_item_1,lista)
         //
-        LVProductos.adapter=adaptador
+        LVTRABAJADORES.adapter=adaptador
     }
 }

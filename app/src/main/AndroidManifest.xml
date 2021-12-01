@@ -13,22 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ConsultaProductoActivity">
-
-        </activity>
-        <activity android:name=".ListadoProductoActivity">
-
-        </activity>
-        <activity android:name=".HabilitarTrabajadorActivity" />
-        <activity android:name=".CanastaActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegistrarProductoActivity">
+        <activity android:name=".ConsultaTrabajadorActivity"></activity>
+        <activity android:name=".ListadoTrabajadorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistrarTrabajadorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConsultaProductoActivity" />
+        <activity android:name=".ListadoProductoActivity" />
+        <activity android:name=".HabilitarTrabajadorActivity" />
+        <activity android:name=".CanastaActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".RegistrarProductoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

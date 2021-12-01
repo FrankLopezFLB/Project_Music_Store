@@ -37,7 +37,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
             if(codigo!=null){
             var hilo = Thread(Runnable {
                 var parametro = "?xcod=" + codigo
-                var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioProducto/producto_por_codigo.php" + parametro
+                var ruta_servicio = "http://192.168.1.150/servicio/servicioProducto/producto_por_codigo.php" + parametro
                 var resultado = Utilitario.traerDatos_String(ruta_servicio)
                 runOnUiThread {
                     BuscarProductoCodigo(resultado)
