@@ -13,16 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Music_Store.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ConsultaProductoActivity">
-
-        </activity>
-        <activity android:name=".ListadoProductoActivity">
-
-        </activity>
+        <activity android:name=".ConsultaServicioActivity"></activity>
+        <activity android:name=".ListadoServiciosActivity" />
+        <activity android:name=".ConsultaProductoActivity" />
+        <activity android:name=".RegistrarServicioActivity"></activity>
+        <activity android:name=".ListadoProductoActivity" />
         <activity android:name=".HabilitarTrabajadorActivity" />
         <activity android:name=".CanastaActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegistrarProductoActivity">
+        <activity android:name=".RegistrarProductoActivity" />
+        <activity android:name=".RedirectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
