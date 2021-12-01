@@ -17,6 +17,12 @@ class RegistrarServicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar_servicio)
 
+        btnConsultasServicio.setOnClickListener {
+            finish()
+            var i= Intent(this,ConsultaServicioActivity::class.java)
+            startActivity(i)
+
+        }
         btnListarServicio.setOnClickListener {
             var i= Intent(this,ListadoServiciosActivity::class.java)
             startActivity(i)
@@ -45,7 +51,7 @@ class RegistrarServicioActivity : AppCompatActivity() {
                 "&xprecio=" +precio+
                 "&xestado="+estado
         Log.wtf("parametros",parametros)
-        var ruta_servicio="http://192.168.0.107:80/servicio/servicioServicio/nuevo_servicio.php"+parametros
+        var ruta_servicio="http://192.168.1.100:8085/servicio/servicioServicio/nuevo_servicio.php"+parametros
         var hilo=Thread(Runnable{
             Utilitario.enviarDatos_String(ruta_servicio)
             runOnUiThread {

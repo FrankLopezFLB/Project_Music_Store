@@ -37,7 +37,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
             if(codigo!=null){
             var hilo = Thread(Runnable {
                 var parametro = "?xcod=" + codigo
-                var ruta_servicio = "http://192.168.1.150/servicio/servicioProducto/producto_por_codigo.php" + parametro
+                var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioProducto/producto_por_codigo.php" + parametro
                 var resultado = Utilitario.traerDatos_String(ruta_servicio)
                 runOnUiThread {
                     BuscarProductoCodigo(resultado)
@@ -59,7 +59,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
             if(codigo!=null){
         var hilo = Thread(Runnable {
             var parametro = "?xcod=" + codigo
-            var ruta_servicio = "http://192.168.1.150/servicio/servicioProducto/eliminar_producto.php" + parametro
+            var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioProducto/eliminar_producto.php" + parametro
             runOnUiThread {
                 txtCodigoServicio.setText("")
                 txtNombreServicio.setText("")
@@ -134,7 +134,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
                     "&xestado="+estado
 
             Log.wtf("parametros",parametros)
-            var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/actualizar_productos.php"+parametros
+            var ruta_servicio="http://192.168.1.100:8085/servicio/servicioProducto/actualizar_productos.php"+parametros
             var hilo=Thread(Runnable{
                 Utilitario.enviarDatos_String(ruta_servicio)
                 runOnUiThread {

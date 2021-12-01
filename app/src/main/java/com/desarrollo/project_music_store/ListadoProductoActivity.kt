@@ -13,7 +13,7 @@ class ListadoProductoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado_producto)
 
-        var ruta_servicio="http://192.168.1.150/servicio/servicioProducto/listar_productos.php"
+        var ruta_servicio="http://192.168.1.100:8085/servicio/servicioProducto/listar_productos.php"
         //definimos el hilo
         var hilo=Thread(Runnable{
             //obtner los datos como cadena usando el metodo traerdatos

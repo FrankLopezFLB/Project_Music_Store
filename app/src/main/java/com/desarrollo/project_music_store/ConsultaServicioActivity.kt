@@ -27,7 +27,7 @@ class ConsultaServicioActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.0.107:80/servicio/servicioServicio/consulta_servicio.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioServicio/consulta_servicio.php" + parametro
                     var resultado = Utilitario.traerDatos_String(ruta_servicio)
                     runOnUiThread {
                         buscarServicio(resultado)
@@ -86,7 +86,7 @@ class ConsultaServicioActivity : AppCompatActivity() {
                     "&xestado="+estado
 
             Log.wtf("parametros",parametros)
-            var ruta_servicio="http://192.168.0.107:80/servicio/servicioServicio/actualizar_servicio.php"+parametros
+            var ruta_servicio="http://192.168.1.100:8085/servicio/servicioServicio/actualizar_servicio.php"+parametros
             var hilo=Thread(Runnable{
                 Utilitario.enviarDatos_String(ruta_servicio)
                 runOnUiThread {
@@ -106,7 +106,7 @@ class ConsultaServicioActivity : AppCompatActivity() {
             if(codigo!=null){
                 var hilo = Thread(Runnable {
                     var parametro = "?xcod=" + codigo
-                    var ruta_servicio = "http://192.168.0.107:80/servicio/servicioServicio/eliminar_servicio.php" + parametro
+                    var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioServicio/eliminar_servicio.php" + parametro
                     runOnUiThread {
                         txtCodigoServicio.setText("")
                         txtNombreServicio.setText("")

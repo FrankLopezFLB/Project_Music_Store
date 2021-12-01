@@ -17,7 +17,7 @@ class ListaClientesActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        var ruta_servicio = "http://192.168.1.150/servicio/ /listar_clientes.php"
+        var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioCliente/listar_clientes.php"
 
         var hilo = Thread(Runnable {
             var resultado = Utilitario.traerDatos_String(ruta_servicio)

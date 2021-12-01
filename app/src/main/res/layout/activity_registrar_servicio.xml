@@ -145,6 +145,16 @@
                 android:onClick="btnGrabarServicio"
                 android:text="REGISTRAR"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnConsultasServicio"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#B7B1A4"
+                android:text="CONSULTAR"
+                android:textAllCaps="false" />
             <Button
             android:id="@+id/btnListarServicio"
             android:layout_width="259dp"
