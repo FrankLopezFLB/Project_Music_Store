@@ -30,6 +30,11 @@
             </intent-filter>
         </activity>
 
+	<activity android:name=".MantenimientoClienteActivity" />
+	<activity android:name=".NuevoClienteActivity" />
+	<activity android:name=".BuscarClienteActivity"/>
+	<activity android:name=".ListaClientesActivity" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
