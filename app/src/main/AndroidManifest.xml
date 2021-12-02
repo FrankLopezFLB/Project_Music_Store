@@ -15,7 +15,6 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".ConsultaEnvioActivity"></activity>
         <activity android:name=".ConsultaTrabajadorActivity" />
-        <activity android:name=".HabilitarTrabajadorActivity" />
         <activity android:name=".ListadoTrabajadorActivity" />
         <activity android:name=".RegistrarTrabajadorActivity" />
         <activity android:name=".ListadoServiciosActivity" />
@@ -29,7 +28,6 @@
         <activity android:name=".ListaClientesActivity" />
         <activity android:name=".ConsultaProductoActivity" />
         <activity android:name=".ListadoProductoActivity" />
-        <activity android:name=".CanastaActivity" />
         <activity android:name=".RegistrarProductoActivity" />
         <activity android:name=".RedirectActivity">
             <intent-filter>
@@ -42,10 +40,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-        <activity android:name=".MiPerfilActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".HistorialComprasActivity" />
     </application>
 
 </manifest>
