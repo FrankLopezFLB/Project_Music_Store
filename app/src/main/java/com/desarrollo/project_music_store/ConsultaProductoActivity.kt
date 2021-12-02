@@ -60,6 +60,7 @@ class ConsultaProductoActivity : AppCompatActivity() {
         var hilo = Thread(Runnable {
             var parametro = "?xcod=" + codigo
             var ruta_servicio = "http://192.168.1.100:8085/servicio/servicioProducto/eliminar_producto.php" + parametro
+            Utilitario.enviarDatos_String(ruta_servicio)
             runOnUiThread {
                 txtCodigoServicio.setText("")
                 txtNombreServicio.setText("")
